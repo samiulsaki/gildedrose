@@ -1,3 +1,4 @@
+# This is a test for Jenkins
 package net.praqma.codeacademy.gildedrose;
 
 import static org.junit.Assert.*;
