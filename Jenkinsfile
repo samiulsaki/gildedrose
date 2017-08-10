@@ -14,6 +14,6 @@ node {
    }
    stage('Javadoc') {
       junit 'target/javadoc'
-      archieve 'target/gildedrose-*.jar'
+      archive 'target/gildedrose-*.jar'
    }
 }
