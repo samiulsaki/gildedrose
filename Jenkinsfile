@@ -12,3 +12,8 @@ node {
       junit '**/target/surefire-reports/TEST-*.xml'
       archive 'target/gildedrose-*.jar'
    }
+   stage('Javadoc') {
+      junit 'target/javadoc'
+      archieve 'target/gildedrose-*.jar'
+   }
+}
