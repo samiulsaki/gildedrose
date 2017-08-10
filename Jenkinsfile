@@ -1,7 +1,8 @@
 node {
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/praqma-training/gildedrose.git'
+      git credentialsId: 'd5173568-ebba-4b5a-9956-57ac598685b9', url: 'https://github.com/samiulsaki/gildedrose.git'
+
    }
    stage('Build') {
       // Run the maven build
@@ -11,4 +12,3 @@ node {
       junit '**/target/surefire-reports/TEST-*.xml'
       archive 'target/gildedrose-*.jar'
    }
-}
